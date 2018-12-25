@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFHomeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-AF-xpo">
+                    <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhX-k5-G7b">
+                            <rect key="frame" x="101" y="230.5" width="173" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PhX-k5-G7b" firstAttribute="centerY" secondItem="VgH-AF-xpo" secondAttribute="centerY" id="9YU-DL-hYh"/>
+                        <constraint firstItem="PhX-k5-G7b" firstAttribute="centerX" secondItem="VgH-AF-xpo" secondAttribute="centerX" id="sN9-ge-vua"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VgH-AF-xpo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KM8-V2-V8I"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="VgH-AF-xpo" secondAttribute="bottom" constant="100" id="dm7-a3-KQM"/>
+                <constraint firstItem="VgH-AF-xpo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="fKm-1q-RY4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VgH-AF-xpo" secondAttribute="trailing" id="vLc-P4-QbK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="105.69715142428787"/>
+        </view>
+    </objects>
+</document>

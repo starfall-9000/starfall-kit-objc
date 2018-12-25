@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SFHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+  
+  SFHomeViewController *homeVC = [[SFHomeViewController alloc] initWithNibName:@"SFHomeViewController" bundle:nil];
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.rootViewController = homeVC;
+  [self.window makeKeyAndVisible];
+  
   return YES;
 }
 

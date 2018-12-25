@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SFHomeViewController.h
 //  StarfallKit
 //
 //  Created by An Binh on 12/25/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface SFHomeViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

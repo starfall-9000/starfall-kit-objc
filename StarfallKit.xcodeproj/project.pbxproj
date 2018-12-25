@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		32B9233A21D1BA200018531D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9233921D1BA200018531D /* AppDelegate.m */; };
-		32B9233D21D1BA210018531D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9233C21D1BA210018531D /* ViewController.m */; };
-		32B9234021D1BA210018531D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B9233E21D1BA210018531D /* Main.storyboard */; };
 		32B9234221D1BA260018531D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234121D1BA260018531D /* Assets.xcassets */; };
 		32B9234521D1BA260018531D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234321D1BA260018531D /* LaunchScreen.storyboard */; };
 		32B9234821D1BA260018531D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9234721D1BA260018531D /* main.m */; };
+		32B9235421D1BFFF0018531D /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9235221D1BFFF0018531D /* SFHomeViewController.m */; };
+		32B9235521D1BFFF0018531D /* SFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B9235321D1BFFF0018531D /* SFHomeViewController.xib */; };
 		701B667BB388813055001441 /* libPods-StarfallKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 161CF797DEE9DFCEE05C8B0F /* libPods-StarfallKit.a */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +21,13 @@
 		32B9233521D1BA200018531D /* StarfallKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarfallKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B9233821D1BA200018531D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32B9233921D1BA200018531D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		32B9233B21D1BA200018531D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		32B9233C21D1BA210018531D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		32B9233F21D1BA210018531D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32B9234121D1BA260018531D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B9234421D1BA260018531D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B9234621D1BA260018531D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B9234721D1BA260018531D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32B9235121D1BFFF0018531D /* SFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
+		32B9235221D1BFFF0018531D /* SFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
+		32B9235321D1BFFF0018531D /* SFHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFHomeViewController.xib; sourceTree = "<group>"; };
 		4D867FFF786D693582C65302 /* Pods-StarfallKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarfallKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarfallKit/Pods-StarfallKit.debug.xcconfig"; sourceTree = "<group>"; };
 		8AB46A99485AD14FC24986FE /* Pods-StarfallKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarfallKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarfallKit/Pods-StarfallKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,17 +74,33 @@
 		32B9233721D1BA200018531D /* StarfallKit */ = {
 			isa = PBXGroup;
 			children = (
+				32B9234E21D1BDAD0018531D /* App */,
 				32B9233821D1BA200018531D /* AppDelegate.h */,
 				32B9233921D1BA200018531D /* AppDelegate.m */,
-				32B9233B21D1BA200018531D /* ViewController.h */,
-				32B9233C21D1BA210018531D /* ViewController.m */,
-				32B9233E21D1BA210018531D /* Main.storyboard */,
 				32B9234121D1BA260018531D /* Assets.xcassets */,
 				32B9234321D1BA260018531D /* LaunchScreen.storyboard */,
 				32B9234621D1BA260018531D /* Info.plist */,
 				32B9234721D1BA260018531D /* main.m */,
 			);
 			path = StarfallKit;
+			sourceTree = "<group>";
+		};
+		32B9234E21D1BDAD0018531D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				32B9234F21D1BDBB0018531D /* Home */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		32B9234F21D1BDBB0018531D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				32B9235121D1BFFF0018531D /* SFHomeViewController.h */,
+				32B9235221D1BFFF0018531D /* SFHomeViewController.m */,
+				32B9235321D1BFFF0018531D /* SFHomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		6E6E01EFDB4667E52DDCA071 /* Frameworks */ = {
@@ -153,9 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B9235521D1BFFF0018531D /* SFHomeViewController.xib in Resources */,
 				32B9234521D1BA260018531D /* LaunchScreen.storyboard in Resources */,
 				32B9234221D1BA260018531D /* Assets.xcassets in Resources */,
-				32B9234021D1BA210018531D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B9233D21D1BA210018531D /* ViewController.m in Sources */,
 				32B9234821D1BA260018531D /* main.m in Sources */,
+				32B9235421D1BFFF0018531D /* SFHomeViewController.m in Sources */,
 				32B9233A21D1BA200018531D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,14 +216,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		32B9233E21D1BA210018531D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32B9233F21D1BA210018531D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		32B9234321D1BA260018531D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -6,9 +6,16 @@ guide how to build new project
 
 ### Step by Step
 
-- init project
+###### init project
 
-- add pod to project
+###### add pod to project
 
 _remember to add Pods/ to .gitignore file_
 
+###### remove story board and using nib file
+
+- delete Main.storyboard
+
+- remove Main story board row in Info.plist
+
+- init window with rootViewController from nib file in AppDelegate.m
