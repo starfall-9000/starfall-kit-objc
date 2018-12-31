@@ -20,8 +20,9 @@
   // Override point for customization after application launch.
   
   SFHomeViewController *homeVC = [[SFHomeViewController alloc] initWithNibName:@"SFHomeViewController" bundle:nil];
+  UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:homeVC];
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  self.window.rootViewController = homeVC;
+  self.window.rootViewController = navCtrl;
   [self.window makeKeyAndVisible];
   
   return YES;

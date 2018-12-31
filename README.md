@@ -30,3 +30,5 @@ _remember to add Pods/ to .gitignore file_
 
 - link new assets in Target > App Icons and Launch Images > Launch Images Source
 
+##### add nav ctrl in AppDelegate
+
