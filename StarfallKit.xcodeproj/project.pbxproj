@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		32B9233A21D1BA200018531D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9233921D1BA200018531D /* AppDelegate.m */; };
 		32B9234221D1BA260018531D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234121D1BA260018531D /* Assets.xcassets */; };
-		32B9234521D1BA260018531D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234321D1BA260018531D /* LaunchScreen.storyboard */; };
 		32B9234821D1BA260018531D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9234721D1BA260018531D /* main.m */; };
 		32B9235421D1BFFF0018531D /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9235221D1BFFF0018531D /* SFHomeViewController.m */; };
 		32B9235521D1BFFF0018531D /* SFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B9235321D1BFFF0018531D /* SFHomeViewController.xib */; };
@@ -22,7 +21,6 @@
 		32B9233821D1BA200018531D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32B9233921D1BA200018531D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32B9234121D1BA260018531D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		32B9234421D1BA260018531D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B9234621D1BA260018531D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B9234721D1BA260018531D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32B9235121D1BFFF0018531D /* SFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 				32B9233821D1BA200018531D /* AppDelegate.h */,
 				32B9233921D1BA200018531D /* AppDelegate.m */,
 				32B9234121D1BA260018531D /* Assets.xcassets */,
-				32B9234321D1BA260018531D /* LaunchScreen.storyboard */,
 				32B9234621D1BA260018531D /* Info.plist */,
 				32B9234721D1BA260018531D /* main.m */,
 			);
@@ -170,7 +167,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B9235521D1BFFF0018531D /* SFHomeViewController.xib in Resources */,
-				32B9234521D1BA260018531D /* LaunchScreen.storyboard in Resources */,
 				32B9234221D1BA260018531D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,17 +210,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		32B9234321D1BA260018531D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32B9234421D1BA260018531D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		32B9234921D1BA260018531D /* Debug */ = {
@@ -344,6 +329,7 @@
 			baseConfigurationReference = 4D867FFF786D693582C65302 /* Pods-StarfallKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StarfallKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -353,7 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.org.starfall.StarfallKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +348,7 @@
 			baseConfigurationReference = 8AB46A99485AD14FC24986FE /* Pods-StarfallKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StarfallKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -371,7 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.org.starfall.StarfallKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
