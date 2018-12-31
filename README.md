@@ -19,3 +19,14 @@ _remember to add Pods/ to .gitignore file_
 - remove Main story board row in Info.plist
 
 - init window with rootViewController from nib file in AppDelegate.m
+
+##### add ios app icon
+
+##### remove ios launch screen story board and using asset file
+
+- delete LaunchScreen.storyboard
+
+- remove Launch screen story board in Info.plist
+
+- link new assets in Target > App Icons and Launch Images > Launch Images Source
+
