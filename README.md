@@ -38,3 +38,9 @@ _remember to add Pods/ to .gitignore file_
 
 - in Target > Build Settings > add link to Prefix Header $(SRCROOT)/dir_to_file.pch
 
+##### add tabbar ctrl in AppDelegate
+
+- override (if needed) BOTBaseTabbarController class and its function
+
+- in AppDelegate create UITabbarController from tabbarWithListKeyword and add it to root
+

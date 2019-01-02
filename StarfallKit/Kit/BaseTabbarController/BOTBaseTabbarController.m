@@ -17,7 +17,6 @@
 
 + (NSString *)classNameFromKeyword:(NSString *)keyword {
     NSString *pascalCase = [BOTFormatter formatString:keyword toCase:StringFormatCasePascal];
-    NSLog(@"%@", PrefixFileName);
     return [NSString stringWithFormat:@"%@%@ViewController", PrefixFileName, pascalCase];
 }
 

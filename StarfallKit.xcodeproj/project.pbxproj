@@ -19,6 +19,7 @@
 		3227C7E321DCCDB900F3143A /* SFRentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227C7E121DCCDB900F3143A /* SFRentViewController.xib */; };
 		3227C7E821DCCF0B00F3143A /* SFPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3227C7E621DCCF0B00F3143A /* SFPostViewController.m */; };
 		3227C7E921DCCF0B00F3143A /* SFPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227C7E721DCCF0B00F3143A /* SFPostViewController.xib */; };
+		3227C7EF21DCEB2600F3143A /* SFTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3227C7EE21DCEB2600F3143A /* SFTabbarController.m */; };
 		32B9233A21D1BA200018531D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9233921D1BA200018531D /* AppDelegate.m */; };
 		32B9234221D1BA260018531D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234121D1BA260018531D /* Assets.xcassets */; };
 		32B9234821D1BA260018531D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9234721D1BA260018531D /* main.m */; };
@@ -54,6 +55,8 @@
 		3227C7E521DCCF0B00F3143A /* SFPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPostViewController.h; sourceTree = "<group>"; };
 		3227C7E621DCCF0B00F3143A /* SFPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPostViewController.m; sourceTree = "<group>"; };
 		3227C7E721DCCF0B00F3143A /* SFPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPostViewController.xib; sourceTree = "<group>"; };
+		3227C7ED21DCEB2600F3143A /* SFTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTabbarController.h; sourceTree = "<group>"; };
+		3227C7EE21DCEB2600F3143A /* SFTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTabbarController.m; sourceTree = "<group>"; };
 		32B9233521D1BA200018531D /* StarfallKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarfallKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B9233821D1BA200018531D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32B9233921D1BA200018531D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 		3227C7EA21DCEABE00F3143A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				3227C7EC21DCEB0C00F3143A /* Tabbar */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -164,6 +168,15 @@
 				3227C7E421DCCEF500F3143A /* Post */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3227C7EC21DCEB0C00F3143A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				3227C7ED21DCEB2600F3143A /* SFTabbarController.h */,
+				3227C7EE21DCEB2600F3143A /* SFTabbarController.m */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		32B9232C21D1BA200018531D = {
@@ -333,6 +346,7 @@
 				3227C7E821DCCF0B00F3143A /* SFPostViewController.m in Sources */,
 				32B9235421D1BFFF0018531D /* SFHomeViewController.m in Sources */,
 				32122F6D21DA415F004C5227 /* BOTValidation.m in Sources */,
+				3227C7EF21DCEB2600F3143A /* SFTabbarController.m in Sources */,
 				32122F5B21DA4076004C5227 /* BOTAlert.m in Sources */,
 				32B9233A21D1BA200018531D /* AppDelegate.m in Sources */,
 				32122F6A21DA414A004C5227 /* BOTSafariController.m in Sources */,

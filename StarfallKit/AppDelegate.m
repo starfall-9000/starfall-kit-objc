@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SFHomeViewController.h"
-#import "BOTBaseTabbarController.h"
+#import "SFTabbarController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSArray *listKeyword = @[@"home", @"rent", @"post"];
-    UITabBarController *tabbar = [BOTBaseTabbarController tabbarWithListKeyword:listKeyword delegate:nil];
+    UITabBarController *tabbar = [SFTabbarController tabbarWithListKeyword:listKeyword delegate:nil];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = tabbar;
