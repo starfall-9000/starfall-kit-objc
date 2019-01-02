@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef enum StringFormatCase: NSInteger {
+    StringFormatCaseCamel,
+    StringFormatCaseUnderScore,
+    StringFormatCaseKebab,
+    StringFormatCasePascal,
+    StringFormatCaseName,
+    StringFormatCaseConst
+} StringFormatCase;
+
 @interface BOTFormatter : NSObject
 
 #pragma mark Device Information
@@ -31,8 +40,9 @@
 + (NSNumber *)numberFromString:(NSString *)strNumber;
 + (NSString *)decimalNumber:(NSNumber *)number;
 + (NSString *)stringByDecodingURLFormat:(NSString *)string;
++ (NSString *)formatString:(NSString *)string toCase:(StringFormatCase)formatCase; // camelCase, PascalCase, under_score, Name Case
 #pragma mark Get Screen
 + (UIViewController *)topMostViewController;
-+ (UIWindow*) findWindow;
++ (UIWindow *)findWindow;
 
 @end

@@ -29,5 +29,6 @@ typedef void (^DataResponseBlock)(id object, NSError *error);
 static CGFloat const BOTStatusBar = 20;
 static CGFloat const BOTBarHeight = 44;
 static CGFloat const BOTTopHeight = BOTStatusBar + BOTBarHeight;
+static CGFloat const BOTTabbarIconSize = 24;
 
 #endif /* BOTHeader_h */

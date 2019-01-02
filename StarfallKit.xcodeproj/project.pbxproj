@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3207743321DC655600A83B05 /* BOTBaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207743221DC655600A83B05 /* BOTBaseTabbarController.m */; };
 		32122F5B21DA4076004C5227 /* BOTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F5921DA4076004C5227 /* BOTAlert.m */; };
 		32122F5E21DA4081004C5227 /* BOTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F5D21DA4081004C5227 /* BOTFileManager.m */; };
 		32122F6121DA40A6004C5227 /* BOTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6021DA40A6004C5227 /* BOTFormatter.m */; };
@@ -14,6 +15,10 @@
 		32122F6721DA40CD004C5227 /* BOTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6621DA40CD004C5227 /* BOTLogger.m */; };
 		32122F6A21DA414A004C5227 /* BOTSafariController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6821DA4149004C5227 /* BOTSafariController.m */; };
 		32122F6D21DA415F004C5227 /* BOTValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6C21DA415F004C5227 /* BOTValidation.m */; };
+		3227C7E221DCCDB900F3143A /* SFRentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3227C7E021DCCDB900F3143A /* SFRentViewController.m */; };
+		3227C7E321DCCDB900F3143A /* SFRentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227C7E121DCCDB900F3143A /* SFRentViewController.xib */; };
+		3227C7E821DCCF0B00F3143A /* SFPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3227C7E621DCCF0B00F3143A /* SFPostViewController.m */; };
+		3227C7E921DCCF0B00F3143A /* SFPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227C7E721DCCF0B00F3143A /* SFPostViewController.xib */; };
 		32B9233A21D1BA200018531D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9233921D1BA200018531D /* AppDelegate.m */; };
 		32B9234221D1BA260018531D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234121D1BA260018531D /* Assets.xcassets */; };
 		32B9234821D1BA260018531D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9234721D1BA260018531D /* main.m */; };
@@ -25,6 +30,8 @@
 /* Begin PBXFileReference section */
 		161CF797DEE9DFCEE05C8B0F /* libPods-StarfallKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarfallKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207742F21DC4E3D00A83B05 /* SFPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPrefixHeader.pch; sourceTree = "<group>"; };
+		3207743121DC655600A83B05 /* BOTBaseTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOTBaseTabbarController.h; sourceTree = "<group>"; };
+		3207743221DC655600A83B05 /* BOTBaseTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOTBaseTabbarController.m; sourceTree = "<group>"; };
 		32122F5421DA3FA2004C5227 /* BOTHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTHeader.h; sourceTree = "<group>"; };
 		32122F5521DA3FB0004C5227 /* BOTDefineMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTDefineMessage.h; sourceTree = "<group>"; };
 		32122F5921DA4076004C5227 /* BOTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTAlert.m; sourceTree = "<group>"; };
@@ -41,6 +48,12 @@
 		32122F6921DA4149004C5227 /* BOTSafariController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTSafariController.h; sourceTree = "<group>"; };
 		32122F6B21DA415E004C5227 /* BOTValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTValidation.h; sourceTree = "<group>"; };
 		32122F6C21DA415F004C5227 /* BOTValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTValidation.m; sourceTree = "<group>"; };
+		3227C7DF21DCCDB900F3143A /* SFRentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFRentViewController.h; sourceTree = "<group>"; };
+		3227C7E021DCCDB900F3143A /* SFRentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFRentViewController.m; sourceTree = "<group>"; };
+		3227C7E121DCCDB900F3143A /* SFRentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFRentViewController.xib; sourceTree = "<group>"; };
+		3227C7E521DCCF0B00F3143A /* SFPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPostViewController.h; sourceTree = "<group>"; };
+		3227C7E621DCCF0B00F3143A /* SFPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPostViewController.m; sourceTree = "<group>"; };
+		3227C7E721DCCF0B00F3143A /* SFPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPostViewController.xib; sourceTree = "<group>"; };
 		32B9233521D1BA200018531D /* StarfallKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarfallKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B9233821D1BA200018531D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32B9233921D1BA200018531D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,9 +88,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3207743021DC5FEC00A83B05 /* BaseTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				3207743121DC655600A83B05 /* BOTBaseTabbarController.h */,
+				3207743221DC655600A83B05 /* BOTBaseTabbarController.m */,
+			);
+			path = BaseTabbarController;
+			sourceTree = "<group>";
+		};
 		32122F5321DA3F8C004C5227 /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				3207743021DC5FEC00A83B05 /* BaseTabbarController */,
 				32122F5821DA4066004C5227 /* Helper */,
 				32122F5521DA3FB0004C5227 /* BOTDefineMessage.h */,
 				32122F5421DA3FA2004C5227 /* BOTHeader.h */,
@@ -104,6 +127,43 @@
 				32122F6C21DA415F004C5227 /* BOTValidation.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3227C7DE21DCCD9500F3143A /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				3227C7DF21DCCDB900F3143A /* SFRentViewController.h */,
+				3227C7E021DCCDB900F3143A /* SFRentViewController.m */,
+				3227C7E121DCCDB900F3143A /* SFRentViewController.xib */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
+		3227C7E421DCCEF500F3143A /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				3227C7E521DCCF0B00F3143A /* SFPostViewController.h */,
+				3227C7E621DCCF0B00F3143A /* SFPostViewController.m */,
+				3227C7E721DCCF0B00F3143A /* SFPostViewController.xib */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		3227C7EA21DCEABE00F3143A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3227C7EB21DCEAD300F3143A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32B9234F21D1BDBB0018531D /* Home */,
+				3227C7DE21DCCD9500F3143A /* Rent */,
+				3227C7E421DCCEF500F3143A /* Post */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		32B9232C21D1BA200018531D = {
@@ -142,7 +202,8 @@
 		32B9234E21D1BDAD0018531D /* App */ = {
 			isa = PBXGroup;
 			children = (
-				32B9234F21D1BDBB0018531D /* Home */,
+				3227C7EB21DCEAD300F3143A /* ViewController */,
+				3227C7EA21DCEABE00F3143A /* Helper */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -224,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B9235521D1BFFF0018531D /* SFHomeViewController.xib in Resources */,
+				3227C7E321DCCDB900F3143A /* SFRentViewController.xib in Resources */,
 				32B9234221D1BA260018531D /* Assets.xcassets in Resources */,
+				3227C7E921DCCF0B00F3143A /* SFPostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +328,9 @@
 				32122F5E21DA4081004C5227 /* BOTFileManager.m in Sources */,
 				32122F6721DA40CD004C5227 /* BOTLogger.m in Sources */,
 				32B9234821D1BA260018531D /* main.m in Sources */,
+				3207743321DC655600A83B05 /* BOTBaseTabbarController.m in Sources */,
+				3227C7E221DCCDB900F3143A /* SFRentViewController.m in Sources */,
+				3227C7E821DCCF0B00F3143A /* SFPostViewController.m in Sources */,
 				32B9235421D1BFFF0018531D /* SFHomeViewController.m in Sources */,
 				32122F6D21DA415F004C5227 /* BOTValidation.m in Sources */,
 				32122F5B21DA4076004C5227 /* BOTAlert.m in Sources */,

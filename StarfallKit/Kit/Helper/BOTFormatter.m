@@ -126,6 +126,76 @@ static CGFloat const DEFAULT_DEVICE_HEI = 736;
     return result;
 }
 
++ (NSString *)formatString:(NSString *)string toCase:(StringFormatCase)formatCase {
+    NSString *format = string;
+    if ([self isConstCase:string]) format = format.lowercaseString;
+    
+    // remove all white space
+    format = [format stringByReplacingOccurrencesOfString:@" " withString:@""];
+    // lower case first character
+    format = [format stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:[[format substringToIndex:1] lowercaseString]];
+    // camel to under score
+    format = [self camelToUnderScore:format];
+    // kebab to under score
+    format = [format stringByReplacingOccurrencesOfString:@"-" withString:@"_"];
+    
+    switch (formatCase) {
+        case StringFormatCaseUnderScore:
+            return format;
+            break;
+        case StringFormatCaseKebab:
+            return [format stringByReplacingOccurrencesOfString:@"_" withString:@"-"];
+            break;
+        case StringFormatCaseConst:
+            return [format uppercaseString];
+            break;
+        case StringFormatCaseCamel:
+            return [self underScoreToCamel:format];
+            break;
+        case StringFormatCasePascal:
+            format = [self underScoreToCamel:format];
+            format = [format stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:[[format substringToIndex:1] uppercaseString]];
+            return format;
+            break;
+        case StringFormatCaseName:
+            return [self underScoreToName:format];
+            break;
+        default:
+            return format;
+            break;
+    }
+    
+}
+
++ (BOOL)isConstCase:(NSString *)string {
+    return [string.uppercaseString isEqualToString:string];
+}
+
++ (NSString *)camelToUnderScore:(NSString *)string {
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(?<=[a-z])([A-Z])|([A-Z])(?=[a-z])" options:0 error:nil];
+    NSString *underscoreString = [[regex stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, string.length) withTemplate:@"_$1$2"] lowercaseString];
+    return underscoreString;
+}
+
++ (NSString *)underScoreToCamel:(NSString *)string {
+    NSArray *listWord = [string componentsSeparatedByString:@"_"];
+    NSMutableString *camelCaseString = [NSMutableString string];
+    [listWord enumerateObjectsUsingBlock:^(NSString *component, NSUInteger idx, BOOL *stop) {
+        [camelCaseString appendString:(idx == 0 ? component : [component capitalizedString])];
+    }];
+    return [camelCaseString copy];
+}
+
++ (NSString *)underScoreToName:(NSString *)string {
+    NSArray *listWord = [string componentsSeparatedByString:@"_"];
+    NSMutableString *camelCaseString = [NSMutableString string];
+    [listWord enumerateObjectsUsingBlock:^(NSString *component, NSUInteger idx, BOOL *stop) {
+        [camelCaseString appendString:[component capitalizedString]];
+        if (idx < [listWord count] - 1) [camelCaseString appendString:@" "];
+    }];
+    return [camelCaseString copy];
+}
+
 #pragma mark get window
 + (UIViewController *)topMostViewController
 {
@@ -136,7 +206,7 @@ static CGFloat const DEFAULT_DEVICE_HEI = 736;
     return topController;
 }
 
-+ (UIWindow*) findWindow {
++ (UIWindow *)findWindow {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     if (window == nil || window.windowLevel != UIWindowLevelNormal) {
         for (window in [UIApplication sharedApplication].windows) {

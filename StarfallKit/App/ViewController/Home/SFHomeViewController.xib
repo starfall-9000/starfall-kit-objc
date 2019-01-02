@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFHomeViewController">
             <connections>
+                <outlet property="contentView" destination="VgH-AF-xpo" id="XNy-65-pBK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,12 +22,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-AF-xpo">
-                    <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="547"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhX-k5-G7b">
-                            <rect key="frame" x="101" y="230.5" width="173" height="42"/>
+                            <rect key="frame" x="101" y="252.5" width="173" height="42"/>
                             <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -41,7 +42,7 @@
             <constraints>
                 <constraint firstItem="VgH-AF-xpo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KM8-V2-V8I"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="VgH-AF-xpo" secondAttribute="bottom" constant="100" id="dm7-a3-KQM"/>
-                <constraint firstItem="VgH-AF-xpo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="fKm-1q-RY4"/>
+                <constraint firstItem="VgH-AF-xpo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="fKm-1q-RY4"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VgH-AF-xpo" secondAttribute="trailing" id="vLc-P4-QbK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

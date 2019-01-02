@@ -10,14 +10,21 @@
 
 @interface SFHomeViewController ()
 
+@property (strong, nonatomic) UIColor *contentColor;
+
 @end
 
 @implementation SFHomeViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  // Do any additional setup after loading the view from its nib.
-  self.title = @"Home";
+    [super viewDidLoad];
+    
+    // Do any additional setup after loading the view from its nib.
+//    [self.contentView setBackgroundColor:self.contentColor];
+}
+
+- (void)setBackground:(UIColor *)color {
+    self.contentColor = color;
 }
 
 /*
