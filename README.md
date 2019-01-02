@@ -32,3 +32,9 @@ _remember to add Pods/ to .gitignore file_
 
 ##### add nav ctrl in AppDelegate
 
+##### add prefix header *.pch file
+
+- create prefix header file
+
+- in Target > Build Settings > add link to Prefix Header $(SRCROOT)/dir_to_file.pch
+

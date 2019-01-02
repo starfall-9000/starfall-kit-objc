@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32122F5B21DA4076004C5227 /* BOTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F5921DA4076004C5227 /* BOTAlert.m */; };
+		32122F5E21DA4081004C5227 /* BOTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F5D21DA4081004C5227 /* BOTFileManager.m */; };
+		32122F6121DA40A6004C5227 /* BOTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6021DA40A6004C5227 /* BOTFormatter.m */; };
+		32122F6421DA40B6004C5227 /* BOTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6221DA40B6004C5227 /* BOTImage.m */; };
+		32122F6721DA40CD004C5227 /* BOTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6621DA40CD004C5227 /* BOTLogger.m */; };
+		32122F6A21DA414A004C5227 /* BOTSafariController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6821DA4149004C5227 /* BOTSafariController.m */; };
+		32122F6D21DA415F004C5227 /* BOTValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32122F6C21DA415F004C5227 /* BOTValidation.m */; };
 		32B9233A21D1BA200018531D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9233921D1BA200018531D /* AppDelegate.m */; };
 		32B9234221D1BA260018531D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B9234121D1BA260018531D /* Assets.xcassets */; };
 		32B9234821D1BA260018531D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9234721D1BA260018531D /* main.m */; };
@@ -17,6 +24,23 @@
 
 /* Begin PBXFileReference section */
 		161CF797DEE9DFCEE05C8B0F /* libPods-StarfallKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarfallKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3207742F21DC4E3D00A83B05 /* SFPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPrefixHeader.pch; sourceTree = "<group>"; };
+		32122F5421DA3FA2004C5227 /* BOTHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTHeader.h; sourceTree = "<group>"; };
+		32122F5521DA3FB0004C5227 /* BOTDefineMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTDefineMessage.h; sourceTree = "<group>"; };
+		32122F5921DA4076004C5227 /* BOTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTAlert.m; sourceTree = "<group>"; };
+		32122F5A21DA4076004C5227 /* BOTAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTAlert.h; sourceTree = "<group>"; };
+		32122F5C21DA4080004C5227 /* BOTFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTFileManager.h; sourceTree = "<group>"; };
+		32122F5D21DA4081004C5227 /* BOTFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTFileManager.m; sourceTree = "<group>"; };
+		32122F5F21DA40A6004C5227 /* BOTFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTFormatter.h; sourceTree = "<group>"; };
+		32122F6021DA40A6004C5227 /* BOTFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTFormatter.m; sourceTree = "<group>"; };
+		32122F6221DA40B6004C5227 /* BOTImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTImage.m; sourceTree = "<group>"; };
+		32122F6321DA40B6004C5227 /* BOTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTImage.h; sourceTree = "<group>"; };
+		32122F6521DA40CD004C5227 /* BOTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTLogger.h; sourceTree = "<group>"; };
+		32122F6621DA40CD004C5227 /* BOTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTLogger.m; sourceTree = "<group>"; };
+		32122F6821DA4149004C5227 /* BOTSafariController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTSafariController.m; sourceTree = "<group>"; };
+		32122F6921DA4149004C5227 /* BOTSafariController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTSafariController.h; sourceTree = "<group>"; };
+		32122F6B21DA415E004C5227 /* BOTValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOTValidation.h; sourceTree = "<group>"; };
+		32122F6C21DA415F004C5227 /* BOTValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOTValidation.m; sourceTree = "<group>"; };
 		32B9233521D1BA200018531D /* StarfallKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarfallKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B9233821D1BA200018531D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32B9233921D1BA200018531D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +75,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		32122F5321DA3F8C004C5227 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				32122F5821DA4066004C5227 /* Helper */,
+				32122F5521DA3FB0004C5227 /* BOTDefineMessage.h */,
+				32122F5421DA3FA2004C5227 /* BOTHeader.h */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		32122F5821DA4066004C5227 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				32122F5A21DA4076004C5227 /* BOTAlert.h */,
+				32122F5921DA4076004C5227 /* BOTAlert.m */,
+				32122F5C21DA4080004C5227 /* BOTFileManager.h */,
+				32122F5D21DA4081004C5227 /* BOTFileManager.m */,
+				32122F5F21DA40A6004C5227 /* BOTFormatter.h */,
+				32122F6021DA40A6004C5227 /* BOTFormatter.m */,
+				32122F6321DA40B6004C5227 /* BOTImage.h */,
+				32122F6221DA40B6004C5227 /* BOTImage.m */,
+				32122F6521DA40CD004C5227 /* BOTLogger.h */,
+				32122F6621DA40CD004C5227 /* BOTLogger.m */,
+				32122F6921DA4149004C5227 /* BOTSafariController.h */,
+				32122F6821DA4149004C5227 /* BOTSafariController.m */,
+				32122F6B21DA415E004C5227 /* BOTValidation.h */,
+				32122F6C21DA415F004C5227 /* BOTValidation.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		32B9232C21D1BA200018531D = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +127,14 @@
 		32B9233721D1BA200018531D /* StarfallKit */ = {
 			isa = PBXGroup;
 			children = (
+				32122F5321DA3F8C004C5227 /* Kit */,
 				32B9234E21D1BDAD0018531D /* App */,
 				32B9233821D1BA200018531D /* AppDelegate.h */,
 				32B9233921D1BA200018531D /* AppDelegate.m */,
 				32B9234121D1BA260018531D /* Assets.xcassets */,
 				32B9234621D1BA260018531D /* Info.plist */,
 				32B9234721D1BA260018531D /* main.m */,
+				3207742F21DC4E3D00A83B05 /* SFPrefixHeader.pch */,
 			);
 			path = StarfallKit;
 			sourceTree = "<group>";
@@ -203,9 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32122F6121DA40A6004C5227 /* BOTFormatter.m in Sources */,
+				32122F6421DA40B6004C5227 /* BOTImage.m in Sources */,
+				32122F5E21DA4081004C5227 /* BOTFileManager.m in Sources */,
+				32122F6721DA40CD004C5227 /* BOTLogger.m in Sources */,
 				32B9234821D1BA260018531D /* main.m in Sources */,
 				32B9235421D1BFFF0018531D /* SFHomeViewController.m in Sources */,
+				32122F6D21DA415F004C5227 /* BOTValidation.m in Sources */,
+				32122F5B21DA4076004C5227 /* BOTAlert.m in Sources */,
 				32B9233A21D1BA200018531D /* AppDelegate.m in Sources */,
+				32122F6A21DA414A004C5227 /* BOTSafariController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +395,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StarfallKit/SFPrefixHeader.pch";
 				INFOPLIST_FILE = StarfallKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,6 +416,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StarfallKit/SFPrefixHeader.pch";
 				INFOPLIST_FILE = StarfallKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

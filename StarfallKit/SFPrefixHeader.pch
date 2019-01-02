@@ -1,0 +1,17 @@
+//
+//  SFPrefixHeader.pch
+//  StarfallKit
+//
+//  Created by An Binh on 1/2/19.
+//  Copyright © 2019 An Binh. All rights reserved.
+//
+
+#ifndef SFPrefixHeader_pch
+#define SFPrefixHeader_pch
+
+#import "BOTHeader.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SFPrefixHeader_pch */
