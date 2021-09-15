@@ -8,9 +8,10 @@
 
 #import "SFHomeViewController.h"
 
-@interface SFHomeViewController ()
+@interface SFHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UIColor *contentColor;
+@property (strong, nonatomic) NSArray *listItem;
 
 @end
 
@@ -19,22 +20,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view from its nib.
-//    [self.contentView setBackgroundColor:self.contentColor];
+    self.listItem = @[@"Row Title 1", @"Row Title 2", @"Row Title 3"];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor colorWithRed:199/255.0 green:199/255.0 blue:199/255.0 alpha:1];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
-- (void)setBackground:(UIColor *)color {
-    self.contentColor = color;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.listItem count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *identifier = @"SFHomeViewCell";
+    NSString *object = [self.listItem objectAtIndex:indexPath.row];
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    cell.textLabel.text = object;
+    cell.textLabel.textColor = [UIColor blueColor];
+    cell.imageView.image = [UIImage imageNamed:@"panda"];
+    cell.imageView.layer.cornerRadius = 8;
+    cell.imageView.layer.masksToBounds = true;
+    cell.imageView.layoutMargins = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 66;
+}
 
 @end
